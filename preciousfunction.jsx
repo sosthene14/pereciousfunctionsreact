@@ -20,3 +20,8 @@ function useOutsideAlerter(ref,clickref) {
             };
         }, [ref, canMaskNotifications]);
     }
+
+//update json file localy
+  const hanldeDatas = (name, e) => {
+    setData({ ...data, [name]: e.target.value });
+  };
